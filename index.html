@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="control-buttons">
+      <span>Start Game</span>
+    </div>
+
+    <div class="info-container">
+      <div class="name">Hello: <span></span></div>
+      <div class="timer">Timer: <span id="time"></span></div>
+      <div class="rightTries">RightTries Tries: <span>0</span></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/angular.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/angular.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/html.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="html">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/html.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/css.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="css">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/css.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="vuejs">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/vuejs.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="vuejs">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/vuejs.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/github.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/github.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="gulpjs">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/gulpjs.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="gulpjs">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/gulpjs.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="mongodb">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/mongodb.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="mongodb">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/mongodb.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/python.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/python.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/react.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/react.png" alt="" />
+        </div>
+      </div>
+
+      <div class="game-block" data-technology="jest">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/jest.png" alt="" />
+        </div>
+      </div>
+      <div class="game-block" data-technology="jest">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/jest.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <button class="btnReset">Play Again</button>
+    </div>
+    <div id="playerInfo"></div>
+
+    <div class="congratulationsMessage">
+      <p></p>
+      <span class="btnReset" onclick="restart()">Play Again</span>
+    </div>
+
+    <audio id="success" src="sound/successful.mp3" preload="auto"></audio>
+    <audio id="fail" src="sound/fail.mp3" preload="auto"></audio>
+    <audio
+      id="startMusic"
+      src="sound/- البدرُ يكمل كل شهرٍ مرةً وهلال وجهك كل يومٍ كاملُ ♥️ -..mp3"
+      preload="auto"
+    ></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
